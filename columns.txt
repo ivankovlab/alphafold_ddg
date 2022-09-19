@@ -1,0 +1,49 @@
+dataset_ddg.tsv:
+
+TMDB_ID - Mutation ID in ThermoMutDB.
+id - Mutation identifier in the format Uniprot_mutation.
+PROTEIN
+SOURCE
+UNIPROT
+MUTATION_uniprot
+ddG - Folding free energy change. Negative values denote stabilization.
+SEQ_UNIPROT
+dG - Change in global pLDDT between mutant and wild-type structure (∆<pLDDT>).
+dL - Change in local pLDDT between mutant and wild-type residue (∆pLDDT).
+charge, hydrophobicity, polarity - Two-symbol notation of the change in the respective properties of mutated residues. First symbol - type of the wild-type residue, second symbol - type of a new residue. Charge: "0" - neutral charge, "+" - positively charged residue, "-" - negatively charged residue. Hydrophobicity: "0" - neutral, "+" - hydrophillic, "-" - hydrophobic. Polarity: "p" - polar, "n" - non-polar.
+size - Change in the size of the side chain of the mutated residue. The side chain sizes were annotated as very small (1), small (2), medium (3), large (4), and very large (5).
+ss - Secondary structure of the mutated residue. Notation according to STRIDE.
+rsa - Relevant solvent accessibility of the mutated residue.
+stability_effect - Stability effect based on ddG:
+HS - highly stabilizing (<−1.84 kcal/mol)
+S - stabilizing (− 1.84 to − 0.92 kcal/mol)
+SS - slightly stabilizing (− 0.92 to − 0.46 kcal/mol)
+N -neutral (− 0.46 to + 0.46 kcal/mol)
+SD - slightly destabilizing (+ 0.46 to + 0.92 kcal/mol)
+D - destabilizing (+ 0.92 to + 1.84 kcal/mol)
+HD - highly destabilizing (> + 1.84 kcal/mol)
+charge_change - "0" - mutation without change in change (charge equals to '00', '++', '--'), "1" - charge changing mutation.
+hydrophobicity_change, polarity_change - "0" - mutation without change in respective property, "1" - mutation with the change in property. 
+size_change - "0" - no change in size, "SI" - slight increase in size (size equals to "1", '2'), "SD" - slight decrease in size ("-1", "-2"), , "LI" - large increase in size (size equals to "3", '4'), "LD" - large decrease in size ("-3", "-4").
+
+Unique values:    
+    
+charge ['00' '+0' '-0' '+-' '0-' '0+' '++' '-+' '--']
+hydrophobicity ['00' '0-' '+0' '0+' '-+' '--' '-0' '+-' '++']
+polarity ['pn' 'pp' 'np' 'nn']
+size [ 0  2 -1 -2  1  3  4 -3 -4]
+ss ['E' 'C' 'H' 'T' 'B' 'G']
+rsa ['buried' 'exposed']
+stability_effect ['HD' 'N' 'S' 'SS' 'D' 'SD' 'HS']
+charge_change [0 1]
+hydrophobicity_change [0 1]
+polarity_change [1 0]
+size_change ['0' 'SI' 'SD' 'LI' 'LD']
+
+datset_gfp.tsv:
+
+variation - Mutation in GFP.
+fitness - Fluorescence of GFP mutant.
+seq_mut - Mutated GFP sequence.
+dG - Change in global pLDDT between mutant and wild-type structure (∆<pLDDT>).
+dL - Change in local pLDDT between mutant and wild-type residue (∆pLDDT).
