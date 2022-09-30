@@ -15,13 +15,13 @@ size - Change in the size of the side chain of the mutated residue. The side cha
 ss - Secondary structure of the mutated residue. Notation according to STRIDE.
 rsa - Relevant solvent accessibility of the mutated residue.
 stability_effect - Stability effect based on ddG:
-HS - highly stabilizing (<−1.84 kcal/mol)
-S - stabilizing (− 1.84 to − 0.92 kcal/mol)
-SS - slightly stabilizing (− 0.92 to − 0.46 kcal/mol)
-N -neutral (− 0.46 to + 0.46 kcal/mol)
-SD - slightly destabilizing (+ 0.46 to + 0.92 kcal/mol)
-D - destabilizing (+ 0.92 to + 1.84 kcal/mol)
-HD - highly destabilizing (> + 1.84 kcal/mol)
+HS - highly stabilizing (< −1.84 kcal/mol)
+S - stabilizing (−1.84 to −0.92 kcal/mol)
+SS - slightly stabilizing (−0.92 to −0.46 kcal/mol)
+N -neutral (−0.46 to +0.46 kcal/mol)
+SD - slightly destabilizing (+0.46 to +0.92 kcal/mol)
+D - destabilizing (+0.92 to +1.84 kcal/mol)
+HD - highly destabilizing (> +1.84 kcal/mol)
 charge_change - "0" - mutation without change in change (charge equals to '00', '++', '--'), "1" - charge changing mutation.
 hydrophobicity_change, polarity_change - "0" - mutation without change in respective property, "1" - mutation with the change in property. 
 size_change - "0" - no change in size, "SI" - slight increase in size (size equals to "1", '2'), "SD" - slight decrease in size ("-1", "-2"), , "LI" - large increase in size (size equals to "3", '4'), "LD" - large decrease in size ("-3", "-4").
